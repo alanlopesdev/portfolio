@@ -1,0 +1,90 @@
+.colunas {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.colunas:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+
+.tabela {
+    border-spacing: 75px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.imagem-projetos {
+    width: 100px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.imagem-projetos:hover {
+    transform: scale(1.1);  
+}
+
+.imagem-contatos {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}	
+
+.imagem-contatos:hover {
+    transform: scale(1.1);  
+}
+
+#imagem {
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+
+.animation-text {
+    animation: typewriter 4s steps(9) 500ms infinite;
+}
+
+.line {
+    position: relative;
+    width: 0px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+@keyframes typewriter {
+    0% {
+          width: 0px;
+    }
+    10% {
+          width: 0px;
+    }
+    25% {
+        width: 160px;
+  }
+  75% {
+        width: 160px;
+  }
+  90% {
+      width: 0px;
+}
+100% {
+      width: 0px;
+}
+
+}
