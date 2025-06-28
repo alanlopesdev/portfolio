@@ -11,6 +11,7 @@
 }
 
 
+
 .tabela {
     border-spacing: 75px;
     margin-top: 100px;
@@ -25,7 +26,7 @@ a{
 
 .imagem-projetos {
     width: 100px;
-    height: 50px;
+    height: 100px;
     transition: transform 0.3s ease;
 }
 
@@ -43,12 +44,51 @@ a{
     transform: scale(1.1);  
 }
 
+.skills-linhas {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.skills-container {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    transition: box-shadow 0.7s ease;
+}
+
+.skills-container:hover {
+    box-shadow: 0 0 10px 0 rgba(94, 88, 88, 0.5);
+    transform: scale(1.1);
+}
+
+#javascript {
+    width: 200px;
+    height: 190px;
+}
+
+#react {
+    width: 350px;
+    height: 205px;
+}
+
+#python {
+    width: 180px;
+    height: 190px;
+}
+
 #imagem {
     width: 200px;
     height: 200px;
 }
 
 .container {
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
 }
