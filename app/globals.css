@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #2b1e02;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #050c36;
+    --foreground: #584203;
   }
 }
 
@@ -23,4 +23,11 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#nome {
+  color: transparent;
+  background: linear-gradient(to right, #00ff66, #33ccff);
+  -webkit-background-clip: text;
+  background-clip: text
 }
