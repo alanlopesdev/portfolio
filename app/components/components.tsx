@@ -199,7 +199,16 @@ export function Tecnologias(){
                 alt="tailwind"></Image>
                 <h1 className="text-white font-bold text-xl">Tailwild</h1>
             </div>
-            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}>
+            <Image
+            src={rc}
+            alt="react"
+            height={90}
+            width={90}>    
+            </Image>
+            <h1 className="text-white font-bold text-xl">React</h1>
+            </div>
+
             <div className={Styles.divSobreMim}></div>
             </div>
         </main>
