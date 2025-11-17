@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import {HomeHeader, HomeMain, HomeAsideLeft, HomeAsideRight, HomeFooter} from '@/app/components/components'
+import {HomeHeader, HomeMain, HomeAsideLeft, HomeAsideRight, SobreMimMain, Tecnologias, FooterAll, Projetos} from '@/app/components/components'
 
 export default function Home() {
   return (
@@ -11,22 +11,22 @@ export default function Home() {
       </header>
 
       <div className="flex justify-center gap-2">
-
       <main>
       <HomeMain></HomeMain>
       </main>
-      
       <aside>
         <HomeAsideRight></HomeAsideRight>
       </aside>
-
       </div>
 
+      <main><SobreMimMain></SobreMimMain></main>
 
-      <main>
-        <HomeMain></HomeMain>
-      </main>
 
+      <main><Tecnologias></Tecnologias></main>
+
+      
+      <Projetos></Projetos>
+      <FooterAll></FooterAll>
   </div>
   );
 }

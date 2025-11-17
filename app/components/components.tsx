@@ -15,7 +15,8 @@ const ImageWidth = 60
 
 export function HomeHeader(){
     return(
-        <header className="bg-blue-800 bg-scroll w-full h-15">
+        <div className="flex justify-center gap-2 w-full h-15">
+        <header className="bg-blue-950 bg-scroll w-full h-15">
             <nav className="text-blue-300 flex flex-rol gap-2 p-2">
                 <h1 className="cursor-pointer border-b-1 text-white">Lopes</h1>
                 <div className="w-full"></div>
@@ -28,12 +29,14 @@ export function HomeHeader(){
                 </div>
             </nav>
         </header>
+        </div>
     )
 }
 
 export function HomeMain(){
     return(
-        <main className="flex justify-center items-center w-330 h-200">
+        <div className="flex justify-center gap-2">
+        <main className="flex justify-center items-center w-330 h-screen border-b-1">
             <div className="flex flex-col ml-2 gap-5">
             <h1 className="text-blue-300 text-2xl font-bold">Olá, me chamo</h1>
 
@@ -43,12 +46,14 @@ export function HomeMain(){
 
             </div>
         </main>
+        </div>
     )
 }
 
 
 export function HomeAsideLeft(){
     return(
+        <div className="flex justify-center gap-2">
         <div className="h-200 flex items-center">
         <aside className="flex h-100 w-100 justify-center items-center">
             <ol className="flex flex-col justify-center items-center text-blue-300 font-bold text-xl gap-10">
@@ -58,6 +63,7 @@ export function HomeAsideLeft(){
                 <li className={Styles.efeitoAsideLeft}>CONTATOS</li>
             </ol>
         </aside>
+        </div>
         </div>
     )
 }
@@ -83,6 +89,7 @@ export function HomeAsideRight(){
         SetOnMouseOverPT("")
     }
     return(
+        <div className="flex justify-center gap-2">
         <aside className="flex flex-col text-black h-200 w-30 justify-center items-center gap-50 text-white">
             <div className="flex flex-col h-50 w-30 items-center justify-center gap-10 rounded-md">
             <div className="cursor-pointer flex flex-row gap-2 border-1 w-40 rounded-md p-2 justify-center items-center"
@@ -107,12 +114,14 @@ export function HomeAsideRight(){
             </div>
             </div>
         </aside>
+        </div>
     )
 }
 
 
 export function HomeFooter(){
     return(
+        <div className="flex justify-center gap-2">
         <footer className="flex flex-row justify-center gap-10">
             <Image className={Styles.imagens}
             src={js}
@@ -156,21 +165,72 @@ export function HomeFooter(){
             alt="typescript"
             ></Image>
         </footer>
+        </div>
     )
 }
 
 
 export function SobreMimMain(){
     return(
-        <div></div>
+        <div className="flex justify-center gap-2">
+        <main className="flex flex-col gap-30 justify-center items-center w-330 h-screen border-b-1">
+            <h1 className="text-white font-bold text-5xl">SOBRE MIM</h1>
+            <div className="flex flex-row gap-30">
+            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}></div>
+            </div>
+        </main>
+        </div>
+    )
+}
+
+export function Tecnologias(){
+    return(
+        <div className="flex justify-center gap-2">
+        <main className="flex flex-col gap-30 justify-center items-center w-330 h-screen border-b-1">
+            <h1 className="text-white font-bold text-5xl">Tecnologias</h1>
+            <div className="flex flex-row gap-30">
+            <div className={Styles.divSobreMim}>
+                <Image
+                src={tw}
+                height={90}
+                width={90}
+                alt="tailwind"></Image>
+                <h1 className="text-white font-bold text-xl">Tailwild</h1>
+            </div>
+            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}></div>
+            </div>
+        </main>
+        </div>
+    )
+}
+
+
+export function Projetos(){
+    return(
+        <div className="flex justify-center gap-2">
+        <main className="flex flex-col gap-30 justify-center items-center w-330 h-screen border-b-1">
+            <h1 className="text-white font-bold text-5xl">Projetos</h1>
+            <div className="flex flex-row gap-30">
+            <div className={Styles.divSobreMim}>
+            </div>
+            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}></div>
+            </div>
+        </main>
+        </div>
     )
 }
 
 
 export function FooterAll(){
     return(
-        <div>
+        <div className="flex justify-center gap-2">
+        <div className="h-50 w-full flex justify-center items-center">
             <p>© 2025 Desenvolvido por Alan Lopes - engenheiro e arquiteto de software.</p>
+        </div>
         </div>
     )
 }
@@ -180,5 +240,6 @@ const Styles = {
     imagens : "border-1 border-black p-2",
     efeitoAsideLeft : "cursor-pointer hover:text-2xl transtion duration-300 hover:text-shadow-lg/50 text-shadow-blue-300",
     headerHoverText : "cursor-pointer hover:text-white hover:border-b-1",
-    asideHoverLanguage: "border-white border-b-1"
+    asideHoverLanguage: "border-white border-b-1",
+    divSobreMim: "h-80 w-60 flex flex-col justify-center items-center bg-blue-950 border-1 border-white rounded-4xl gap-10"
 }
