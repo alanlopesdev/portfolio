@@ -7,11 +7,30 @@ import tw from '@/public/images/tailwind.png'
 import js from '@/public/images/javascript.png'
 import rc from '@/public/images/react.png'
 import c from '@/public/images/c.png'
-import dotnet from '@/public/images/dotnet.png'
+import dotnet from '@/public/images/dotnetcore.png'
 import '@/app/globals.css'
 
 const imageHeigth = 60
 const ImageWidth = 60 
+
+const textosPT = {
+    oi:"",
+    header:{
+        sobremim : "sobre mim",
+        tecnologia : "tecnologia",
+        projetos: "projetos"
+    }
+}
+
+const textosEN = {
+    oi:"",
+    header:{
+        sobremim : "sobre mim",
+        tecnologia : "tecnologia",
+        projetos: "projetos"
+    }
+}
+
 
 export function HomeHeader(){
     return(
@@ -194,8 +213,8 @@ export function Tecnologias(){
             <div className={Styles.divSobreMim}>
                 <Image
                 src={tw}
-                height={90}
-                width={90}
+                height={150}
+                width={100}
                 alt="tailwind"></Image>
                 <h1 className="text-white font-bold text-xl">Tailwild</h1>
             </div>
@@ -203,13 +222,41 @@ export function Tecnologias(){
             <Image
             src={rc}
             alt="react"
-            height={90}
+            height={100}
             width={90}>    
             </Image>
             <h1 className="text-white font-bold text-xl">React</h1>
             </div>
 
-            <div className={Styles.divSobreMim}></div>
+            <div className={Styles.divSobreMim}>
+                <Image
+                src={ts}
+                height={200}
+                width={200}
+                alt="tailwind">
+                </Image>
+                <h1 className="text-white font-bold text-xl">Typescript</h1>
+            </div>
+
+            <div className={Styles.divSobreMim}>
+                <Image
+                src={c}
+                height={200}
+                width={200}
+                alt="tailwind">
+                </Image>
+                <h1 className="text-white font-bold text-xl">C#</h1>
+            </div>
+
+            <div className={Styles.divSobreMim}>
+                <Image
+                src={dotnet}
+                height={200}
+                width={200}
+                alt="tailwind">
+                </Image>
+                <h1 className="text-white font-bold text-xl">.NET</h1>
+            </div>
             </div>
         </main>
         </div>
@@ -250,5 +297,5 @@ const Styles = {
     efeitoAsideLeft : "cursor-pointer hover:text-2xl transtion duration-300 hover:text-shadow-lg/50 text-shadow-blue-300",
     headerHoverText : "cursor-pointer hover:text-white hover:border-b-1",
     asideHoverLanguage: "border-white border-b-1",
-    divSobreMim: "h-80 w-60 flex flex-col justify-center items-center bg-blue-950 border-1 border-white rounded-4xl gap-10"
+    divSobreMim: "h-80 w-60 flex flex-col justify-center items-center bg-blue-950 border-1 border-white rounded-4xl gap-10 hover:scale-120 transition 0.5"
 }
