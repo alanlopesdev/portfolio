@@ -285,7 +285,7 @@ export function FooterAll(){
     return(
         <div className="flex justify-center gap-2">
         <div className="h-50 w-full flex justify-center items-center">
-            <p>© 2025 Desenvolvido por Alan Lopes - engenheiro e arquiteto de software.</p>
+            <p>Desenvolvido por github.com/alanlopesdev - engenheiro e arquiteto de software.</p>
         </div>
         </div>
     )
